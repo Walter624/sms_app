@@ -1,5 +1,6 @@
-class SmsAppController < ApplicationController
-  before_action :set_user, only: [:submit, :tel, :textarea]
+class SmsController < ApplicationController
+  def home
+  end
   
   def tel
   end
@@ -11,4 +12,3 @@ class SmsAppController < ApplicationController
   end
   
 end
-

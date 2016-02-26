@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   
-  resources :set_user, :only => [:submit, :tel, :textarea]
+  resources :sms_home
+  
+  get 'sms/home'
+  
+  root 'sms#home'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
