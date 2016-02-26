@@ -1,10 +1,8 @@
-Rails.application.routes.draw do
+SmsApp::Application.routes.draw do
   
-  resources :sms_home
-  
-  get 'sms/home'
-  
-  root 'sms#home'
+ 
+  root :to => 'sms#index'
+  post '/send_sms' => 'twilio#send_sms'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

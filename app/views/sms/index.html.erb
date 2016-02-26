@@ -1,0 +1,11 @@
+<h1>Send Message with Twilio!!!</h1>
+
+<p>No need to put 1 in number</p>
+<br>
+
+<%= form_tag('/send_sms', method: 'POST') do %>
+    <input type="text" placeholder="enter number" name="number">
+    <input type="text" placeholder="enter message here" name="message">
+    <button type="submit">Submit</button>
+    <% end %>
+ 
