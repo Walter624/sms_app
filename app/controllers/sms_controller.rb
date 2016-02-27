@@ -3,7 +3,7 @@ class SmsController < ApplicationController
   def index
   end
   
-  def submit
+  def send_sms
     message = params[:message]
     number = params[:number]
     account_sid = 'AC13a8e4fdb0d9eee1648750e3c0399507'

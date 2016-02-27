@@ -2,7 +2,7 @@ SmsApp::Application.routes.draw do
   
  
   root :to => 'sms#index'
-  post '/send_sms' => 'twilio#send_sms'
+  post '/send_sms' => 'sms#send_sms'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
